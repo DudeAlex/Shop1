@@ -1,8 +1,8 @@
-package page.base;
+package pages.base;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import util.BaseTestUtil;
 
 import java.time.Duration;
 
@@ -14,7 +14,7 @@ public abstract class BaseModel {
 
     public WebDriver getDriver() {
         if (driver == null)
-            driver = new ChromeDriver();
+             driver = BaseTestUtil.initializeDriver();
 
         return driver;
     }
