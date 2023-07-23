@@ -14,9 +14,18 @@ public abstract class BaseModel {
 
     public WebDriver getDriver() {
         if (driver == null)
-             driver = BaseTestUtil.initializeDriver();
+             driver =  BaseTestUtil.initializeDriver();
 
         return driver;
+    }
+    public void quitDriver(){
+        if(driver != null) {
+            driver.quit();
+            driver = null;
+            wait2 = null;
+            wait5 = null;
+            wait10 = null;
+        }
     }
 
     public WebDriverWait getWait2() {

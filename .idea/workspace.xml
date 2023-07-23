@@ -5,23 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bad4e9ed-cef2-4170-8df1-ea72821dbaba" name="Changes" comment="build framework from the scratch">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/base/BaseModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/base/BasePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/base/BasePageHeaderComponentPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/base/BasePageTopMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/component/BaseComponent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/test/base/HomePageTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/util/BaseTestUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/page/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/component/HeaderComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/page/base/BaseModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/page/base/BasePage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/base/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/HomePageTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/util/TestUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/base/BaseModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/base/BaseModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/base/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/base/HomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/base/HomePageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/util/BaseTestUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/util/BaseTestUtil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,10 +25,38 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1689979180" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1689979179" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -72,7 +88,7 @@
       <recent name="page.component" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.HomePageTest.testVerifyShopNowButtonExists">
+  <component name="RunManager" selected="TestNG.HomePageTest">
     <configuration name="HomePageTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Askomdch" />
       <extension name="coverage">
@@ -90,24 +106,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HomePageTest.testHomePageShopNowButtonClickResult" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Askomdch" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.HomePageTest" />
-      <option name="METHOD_NAME" value="testHomePageShopNowButtonClickResult" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="HomePageTest.testVerifyShopNowButtonExists" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Askomdch" />
       <extension name="coverage">
@@ -119,6 +117,24 @@
       <option name="PACKAGE_NAME" value="test.base" />
       <option name="MAIN_CLASS_NAME" value="test.base.HomePageTest" />
       <option name="METHOD_NAME" value="testVerifyShopNowButtonExists" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HomePageTest.testVerifyShopNowButtonExists2" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Askomdch" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.base.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.base" />
+      <option name="MAIN_CLASS_NAME" value="test.base.HomePageTest" />
+      <option name="METHOD_NAME" value="testVerifyShopNowButtonExists2" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -144,17 +160,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StorePageTest.testVerifyTitleOfHomePageIsCorrect" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="HomePageTest.verifyHeaderTitleIsPresent" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Askomdch" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pages.*" />
+          <option name="PATTERN" value="test.base.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.StorePageTest" />
-      <option name="METHOD_NAME" value="testVerifyTitleOfHomePageIsCorrect" />
+      <option name="PACKAGE_NAME" value="test.base" />
+      <option name="MAIN_CLASS_NAME" value="test.base.HomePageTest" />
+      <option name="METHOD_NAME" value="verifyHeaderTitleIsPresent" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -164,11 +180,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.HomePageTest" />
+        <item itemvalue="TestNG.HomePageTest.verifyHeaderTitleIsPresent" />
+        <item itemvalue="TestNG.HomePageTest.testVerifyShopNowButtonExists2" />
         <item itemvalue="TestNG.HomePageTest.testVerifyShopNowButtonExists" />
         <item itemvalue="TestNG.HomePageTest.testVerifyStoreButtonExists" />
-        <item itemvalue="TestNG.HomePageTest" />
-        <item itemvalue="TestNG.StorePageTest.testVerifyTitleOfHomePageIsCorrect" />
-        <item itemvalue="TestNG.HomePageTest.testHomePageShopNowButtonClickResult" />
       </list>
     </recent_temporary>
   </component>
@@ -188,7 +204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689462704163</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="build framework from the scratch">
+      <created>1689978974371</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1689978974371</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -205,5 +228,21 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="build framework from the scratch" />
     <option name="LAST_COMMIT_MESSAGE" value="build framework from the scratch" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/util/BaseTestUtil.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="TestNG">
+        <watch expression="driver" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

@@ -11,4 +11,17 @@ public class HomePageTest extends BaseTest{
 
         Assert.assertEquals(storeButtonText, "SHOP NOW");
     }
+    @Test
+    public void testVerifyShopNowButtonExists2(){
+        String storeButtonText = new HomePage(getDriver()).verifyShopNowButton();
+
+        Assert.assertEquals(storeButtonText, "SHOP NOW");
+    }
+
+    @Test
+    public void verifyHeaderTitleIsPresent(){
+        String titleHeaderText = new HomePage(getDriver()).getHeader().getHomePageTitleLinkText();
+
+        Assert.assertEquals(titleHeaderText, "AskOmDch");
+    }
 }

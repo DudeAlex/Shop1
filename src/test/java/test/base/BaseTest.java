@@ -14,9 +14,9 @@ public class BaseTest extends BaseModel {
 
     @BeforeMethod
     public void setUp(){
-        loadProperties();
-        loadDriver();
-        goToURL();
+        startDriver();
+        setUpImplicitWaitMaximizeWindow();
+        goToURLStoredInProperties();
     }
 
     @AfterMethod
@@ -24,19 +24,28 @@ public class BaseTest extends BaseModel {
         if(!iTestResult.isSuccess()){
             BaseTestUtil.takeScreenshot(getDriver(), method.getName());
         }
-        getDriver().quit();
+        quitDriver();
     }
 
-    private void loadProperties() {
-        BaseTestUtil.loadPropertiesData();
-    }
+    private void startDriver() {
 
-    private void loadDriver() {
+        int count = 0;
+        do {
+            try {
+                Thread.sleep(500);
+                getDriver();
+            } catch (Exception e) {
+                if (++count >= 3) {
+                    throw new RuntimeException(e);
+                }
+            }
+        } while (getDriver() == null);
+    }
+    private void setUpImplicitWaitMaximizeWindow() {
         getDriver().manage().window().maximize();
         getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
-
-    private void goToURL(){
+    private void goToURLStoredInProperties(){
         getDriver().get(BaseTestUtil.getWebSite());
     }
 }

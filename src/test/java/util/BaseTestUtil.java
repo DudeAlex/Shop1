@@ -25,15 +25,17 @@ public class BaseTestUtil {
     }
 
     public static WebDriver initializeDriver(){
-
-        return switch (properties.getProperty("browser")) {
+        loadPropertiesData();
+        String browserType = properties.getProperty("browser");
+        return switch (browserType) {
             case "chrome" -> new ChromeDriver();
             case "firefox" -> new FirefoxDriver();
-            default -> throw new RuntimeException("wrong driver provided");
+            default -> throw new RuntimeException("wrong driver provided: " + browserType );
         };
     }
 
     public static String getWebSite(){
+        loadPropertiesData();
         return properties.getProperty("url");
     }
     public static void takeScreenshot(WebDriver driver,String testName) throws IOException {
