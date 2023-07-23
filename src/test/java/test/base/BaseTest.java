@@ -32,10 +32,10 @@ public class BaseTest extends BaseModel {
         int count = 0;
         do {
             try {
-                Thread.sleep(500);
-                getDriver();
+                Thread.sleep(100);
+                initializeDriver();
             } catch (Exception e) {
-                if (++count >= 3) {
+                if (++count > 20) {
                     throw new RuntimeException(e);
                 }
             }

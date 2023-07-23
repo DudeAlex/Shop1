@@ -12,10 +12,13 @@ public abstract class BaseModel {
     private WebDriverWait wait5;
     private WebDriverWait wait10;
 
-    public WebDriver getDriver() {
-        if (driver == null)
-             driver =  BaseTestUtil.initializeDriver();
 
+    public void initializeDriver(){
+        if (driver == null)
+            driver =  BaseTestUtil.initializeDriver();
+    }
+
+    public WebDriver getDriver() {
         return driver;
     }
     public void quitDriver(){
